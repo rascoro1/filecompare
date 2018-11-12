@@ -18,12 +18,12 @@ def main():
     # Get all files in all sub directories
     for dir, dirname, filename in os.walk(dirname):
         for f in filename:
-            full_path = dir + "/" + f
-            hash = hash_func(args.hash, full_path)
+            file_path = dir + "/" + f
+            hash = hash_func(args.hash, file_path)
             if hash in hashes:
-                hashes[hash].append(full_path)
+                hashes[hash].append(file_path)
             else:
-                hashes[hash] = [full_path]
+                hashes[hash] = [file_path]
 
     # Display duplicate hashes
     for k, v in hashes.items():
