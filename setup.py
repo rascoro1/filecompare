@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name = 'filecompare',
-    version = '0.1.1',
+    version = '0.1.3',
     author="rascoro1",
     author_email="andcope1995@gmail.com",
     long_description=long_description,

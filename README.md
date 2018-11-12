@@ -1,5 +1,5 @@
 # filecompare
-find duplicate files
+find duplicate files in a directory
 
 ### Usage
 
@@ -15,4 +15,5 @@ optional arguments:
   -h, --help   show this help message and exit
   --raw        easily parsable results
   --hash HASH  available hash algos: md5
+  --delete     prompt user to delete replica files
 ```
