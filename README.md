@@ -3,7 +3,7 @@ find duplicate files
 
 ### Usage
 
-```bash
+```
 usage: filecompare [-h] [--raw] [--hash HASH] directory
 
 Compare file content in directory
