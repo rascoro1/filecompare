@@ -22,3 +22,6 @@ optional arguments:
   --hash HASH  available hash algos: md5
   --delete     prompt user to delete replica files
 ```
+
+### Pypi
+https://pypi.org/project/filecompare/
