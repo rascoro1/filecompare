@@ -8,7 +8,7 @@ setuptools.setup(
     name="filecompare",
     version="0.0.1",
     author="rascoro1",
-    author_email="github",
+    author_email="andcope1995@gmail.com",
     description="commnad line utility for comparing files in directories",
     long_description=long_description,
     long_description_content_type="text/markdown",
