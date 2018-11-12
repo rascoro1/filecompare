@@ -9,7 +9,7 @@ setup(
     name = 'filecompare',
     version = '0.1.1',
     author="rascoro1",
-    author_email="andcope1995",
+    author_email="andcope1995@gmail.com",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/rascoro1/filecompare",
