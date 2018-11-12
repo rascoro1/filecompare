@@ -1,5 +1,5 @@
 import os
-from .funcmodule import md5
+from .funcmodule import hash_func
 import argparse
 
 
@@ -15,19 +15,23 @@ def main():
     hashes = {}
     dirname = args.directory.rstrip("/")
 
-    # Get all files in all sun directories
+    # Get all files in all sub directories
     for dir, dirname, filename in os.walk(dirname):
         for f in filename:
             full_path = dir + "/" + f
-            hash = md5(full_path)
+            hash = hash_func(args.hash, full_path)
             if hash in hashes:
                 hashes[hash].append(full_path)
             else:
                 hashes[hash] = [full_path]
 
+    # Display duplicate hashes
     for k, v in hashes.items():
         if len(v) > 1:
-            print("{}: ".format(len(v)) + "\n\t-".join(v))
+            if args.raw:
+                print("{}".format(",".join(v)))
+            else:
+                print("{}: ".format(len(v)) + "\n\t-".join(v))
 
 
 
