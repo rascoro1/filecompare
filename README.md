@@ -1,6 +1,11 @@
 # filecompare
 find duplicate files in a directory
 
+### Install
+```bash
+$ pip install filecompare
+```
+
 ### Usage
 
 ```
